@@ -41,7 +41,7 @@ display: -webkit-flex;
   width: 90%;	
 }
 
-.conteneur_panneau
+.panneau
 {
   display: -webkit-flex;
   display: flex;
@@ -49,13 +49,6 @@ display: -webkit-flex;
     flex-direction: column;
 }
 
-.panneau
-{
-	
-	height: 30px;
-	width: 100%;
-
-}
 
 .bleu
 {
