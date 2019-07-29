@@ -25,44 +25,148 @@
 }
 
 /* Eléments principaux de la page */
-
 body
 {
-    background: url('images/fond_jaune.png');
+    background: url('../images/ciel.png');
     font-family: 'Trebuchet MS', Arial, sans-serif;
-    color: #181818;
-
+     width: 100%;
+     display: block;
 }
 
-#bloc_page
+header
 {
-display: -webkit-flex;
-  display: flex;
-  width: 90%;	
+
+display: block;
+width: 100%;
+z-index: 0;
 }
 
-.panneau
+.noire
 {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-    flex-direction: column;
+    background-color:#040404;
+    display: block;
+    height: 40px;
+     width: 100%;
+     position: absolute;
+     top: 0px;
+ right: 0px;
+  z-index: 1;
 }
-
 
 .bleu
 {
-	background-color:#3823bd;	
+ background-color:#1695F8;	
+ display: block;
+ height: 40px;
+ width: 100%;
+ top: 40px;
+ position: absolute;
+ right:  0px;
+}
+
+/* Navigation */
+
+nav ul, #nav_accueil ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 10px;
+}
+
+
+nav a , li span
+{ 
+    font-size: 0.8em;
+    color: #E9F1F7;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+
+
+nav a:hover, #nav_accueil a:hover
+{
+    color: #760001;
+    border-bottom: 0px solid #760001;
+    
+}
+
+#nav_accueil a:hover
+{
+    color: #760001;
+    border-bottom: 0px solid #760001;
+     font-size: 1.2em;
 }
 
 
 .banniere
 {
-	background-color:white;
-	
+	background-color:#E9F1F7;
+    display: block;
+     width: 100%;
+     position: absolute;
+     right: 0px;
+     top:80px;
+     height:50px;
 }
 
-.noire
+#nav_1
 {
-	background-color:#040404;
+ display: block;
+ position: absolute;
+ color: #E9F1F7;
+ right: 0px;
+ top: 0px;
+  z-index: 2;
+}
+
+#nav_accueil
+{
+ display: block;
+ position: absolute;
+ right: 10px;
+ top: 0px;
+ z-index:2;
+}
+
+/* set up the right arrows first */
+#nav_accueil li > a:after
+{
+content:'\25B6';
+}
+/* set up the downward arrow for top level items */
+#nav_accueil > ul > li > a:after
+{
+content:'\a0\a0\a0\25BC';
+font: bold 12px Arial, Helvetica, Sans-serif;
+}
+
+/* clear the content if a is only child*/
+#nav_accueil li > a:only-child:after
+{
+content: '';
+}
+
+#nav_accueil a 
+{ 
+    font-size: bold;
+    color: #D8DCDF;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+#nav_accueil li::after {
+content: "|";
+float: right;
+margin-left:5px;
+margin-right:5px;
+color: #fff;
+}
+#nav_accueil li:last-child::after {
+display: none;
+content: '';
 }
