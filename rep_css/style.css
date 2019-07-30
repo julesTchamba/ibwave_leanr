@@ -47,9 +47,9 @@ z-index: 0;
     display: block;
     height: 40px;
      width: 100%;
+     left: 0px;
      position: absolute;
      top: 0px;
- right: 0px;
   z-index: 1;
 }
 
@@ -66,7 +66,7 @@ z-index: 0;
 
 /* Navigation */
 
-nav ul, #nav_accueil ul
+nav ul
 {
     list-style-type: none;
     display: flex;
@@ -95,22 +95,13 @@ nav a:hover
     
 }
 
-/*
-#nav_accueil a:hover
-{
-    color: #760001;
-    border-bottom: 0px solid #760001;
-     font-size: 1.2em;
-}
-*/
-
 .banniere
 {
 	background-color:#E9F1F7;
     display: block;
      width: 100%;
      position: absolute;
-     right: 0px;
+     left: 0px;
      top:80px;
      height:50px;
 }
@@ -124,56 +115,6 @@ nav a:hover
  top: 0px;
   z-index: 2;
 }
-
-/*
-#nav_accueil
-{
- display: block;
- position: absolute;
- right: 10px;
- top: 0px;
- z-index:2;
-}
-
-/* set up the right arrows first 
-#nav_accueil li > a:after
-{
-content:'\25B6';
-}
-/* set up the downward arrow for top level items 
-#nav_accueil > ul > li > a:after
-{
-content:'\a0\a0\a0\25BC';
-font: bold 12px Arial, Helvetica, Sans-serif;
-}
-
-/* clear the content if a is only child
-#nav_accueil li > a:only-child:after
-{
-content: '';
-}
-
-#nav_accueil a 
-{ 
-    font-size: bold;
-    color: #D8DCDF;
-    padding-bottom: 3px;
-    text-decoration: none;
-}
-
-#nav_accueil li::after {
-content: "|";
-float: right;
-margin-left:5px;
-margin-right:5px;
-color: #fff;
-}
-#nav_accueil li:last-child::after {
-display: none;
-content: '';
-}
-
-*/
 
  /* Navbar container */
 .navbar {
@@ -249,7 +190,7 @@ content: '';
 
 .languagepicker {
     background-color: #FFF;
-    display: block;
+    display: inline;
     padding: 0;
     height: 30px;
     overflow: hidden;
