@@ -95,13 +95,14 @@ nav a:hover
     
 }
 
+/*
 #nav_accueil a:hover
 {
     color: #760001;
     border-bottom: 0px solid #760001;
      font-size: 1.2em;
 }
-
+*/
 
 .banniere
 {
@@ -174,11 +175,14 @@ content: '';
 
 */
 
+ /* Navbar container */
 .navbar {
   overflow: hidden;
   background-color: #333;
+  font-family: Arial;
 }
 
+/* Links inside the navbar */
 .navbar a {
   float: left;
   font-size: 16px;
@@ -188,26 +192,30 @@ content: '';
   text-decoration: none;
 }
 
+/* The dropdown container */
 .dropdown {
   float: left;
   overflow: hidden;
 }
 
+/* Dropdown button */
 .dropdown .dropbtn {
-  font-size: 16px;  
+  font-size: 16px;
   border: none;
   outline: none;
   color: white;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit;
-  margin: 0;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
 }
 
+/* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: red;
 }
 
+/* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -217,6 +225,7 @@ content: '';
   z-index: 1;
 }
 
+/* Links inside the dropdown */
 .dropdown-content a {
   float: none;
   color: black;
@@ -226,10 +235,60 @@ content: '';
   text-align: left;
 }
 
+/* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #ddd;
 }
 
+/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+} 
+
+
+
+.languagepicker {
+    background-color: #FFF;
+    display: block;
+    padding: 0;
+    height: 30px;
+    overflow: hidden;
+    transition: all .3s ease;
+    margin: 0 50px 10px 0;
+    vertical-align: top;
+    float: right;
+}
+
+.languagepicker:hover {
+    /* don't forget the 1px border */
+    height: 61px;
+}
+
+.languagepicker a{
+    color: #000;
+    text-decoration: none;
+}
+
+.languagepicker li {
+    display: block;
+    padding: 0px 20px;
+    line-height: 30px;
+    border-top: 1px solid #EEE;
+}
+
+.languagepicker li:hover{
+    background-color: #EEE;
+}
+
+.languagepicker a:first-child li {
+    border: none;
+    background: #FFF !important;
+}
+
+.languagepicker li img {
+    margin-right: 5px;
+}
+
+.roundborders {
+    border-radius: 5px;
 }
