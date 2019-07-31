@@ -57,7 +57,7 @@ z-index: 0;
 
 .img_avion
 {
-border-radius: 17px 17px 17px 17px;  
+border-radius: 20px 20px 20px 20px;  
 }
 
 section
@@ -66,6 +66,7 @@ section
     position: absolute;
     width: 100%;
     height: 700px;
+    text-align: center;
     top: 530px;
     left: 0PX;
     z-index: 0;
@@ -73,8 +74,7 @@ section
 
 h1
 {
-display: block;
-position: absolute;
+display: inline-block;
 margin: auto;    
 font-family: 'Dayrom', 'BallparkWeiner',sans-serif;
 font-size: 1.2em;
@@ -308,4 +308,78 @@ ul li img
 
 .roundborders {
     border-radius: 5px;
+}
+
+
+@import "bourbon";
+
+*{
+  box-sizing: border-box;
+}
+body{
+  background: black;
+}
+
+span{
+  margin: 0;
+  padding: 0;
+}
+
+.end-left{
+  margin-left: -235px;
+}
+
+.end-right{
+  margin-right: -117.5px;
+}
+.outline{
+  position: absolute;
+  top: 20px;
+}
+
+.outline{
+    color: black;
+   -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: orange;
+   font-size: 64px;
+  font-family: 'Arvo', serif;
+}
+
+.orbs{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  display: block;
+  font-size: 128px;
+ 
+  
+  span{
+     color: red;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    text-shadow: 0 0 20px orange, 1px 1px 20px orange, 2px 2px 20px orange, -1px -1px 20px orange, -2px -2px 20px orange;
+    position: absolute;
+    left: 50%;
+    
+    &:first-child{
+      margin-left: -210px;
+    }
+    
+    &:not(:first-child){
+      margin-left: -35px;
+    }
+  }
+}
+
+.glow{
+  opacity: 0;
+  font-family: 'Arvo', serif;
+  font-weight: 300;
+  color: orange;
+  margin-left: -222.5px;
+  font-size: 105px;
+  position: absolute;
+  top: 200px;
+  left: 50%;
 }
