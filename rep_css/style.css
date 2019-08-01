@@ -27,7 +27,7 @@
 /* Eléments principaux de la page */
 body
 {
-    background: url('../images/fond_bleu.png');
+    background: url('../images/avion_footer.png');
     font-family: 'Trebuchet MS', Arial, sans-serif;
      width: 100%;
      display: block;
@@ -57,7 +57,24 @@ z-index: 0;
 
 .img_avion
 {
+display: block;
+top: 30px;
+position: absolute;
+left:48%;
 border-radius: 20px 20px 20px 20px;  
+}
+
+#conteneur
+{
+    background-color: #f5f4fa;
+    display: block;
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height: 820px;
+    top: 120px;
+    opacity: 0.4;
+    border-radius: 20px 20px 20px 20px;  
 }
 
 section
@@ -65,25 +82,65 @@ section
     display: block;
     position: absolute;
     width: 100%;
-    height: 700px;
+    height: 880px;
     text-align: center;
     top: 530px;
     left: 0PX;
     z-index: 0;
 }
 
-h1
+footer
 {
-display: inline-block;
-margin: auto;    
-font-family: 'Dayrom', 'BallparkWeiner',sans-serif;
-font-size: 1.2em;
+    display: block;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height:200px;
+    background-color:#040404;
+      border-radius: 150px 150px 0px 0px;  
+    z-index: 2;
 }
 
+.news_letter
+{
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    width: 30%;
+    height:160px;
+    border-right: 0.2px inset #e4e2ef;
+}
+
+.div_milieu
+{
+    display: block;
+    position: absolute;
+    left:35%;
+    top: 20px;
+    width: 30%;
+    height:160px;
+    border-right: 0.2px inset #e4e2ef;
+}
+
+
+.titre
+{
+display:block;
+position: relative;
+top: 30px;
+margin: auto;    
+font-family: 'Dayrom', 'BallparkWeiner',sans-serif;
+}
+
+h1
+{
+font-size: 1em;
+}
 strong
 {
-     color: #333;
-     font-size: 1.2em;
+     color: red;
+     font-size: 0.9em;
 }
 .noire
 {
@@ -177,8 +234,43 @@ ul li img
  left: 10%;
  }
 
+ .anim_text
+ {
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: absolute;
+  left: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+ }
 
- /* Navbar container */
+.anim_text p
+{
+  position: relative;
+  font-family: sans-serif;
+ /* text-transform: lowercase;*/
+  font-size: 1em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 4s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+
+}
 
 .navbar {
  display: inline-block;
@@ -197,6 +289,8 @@ ul li img
   padding: 14px 16px;
   text-decoration: none;
 }
+
+
 
 /* The dropdown container */
 .dropdown {
@@ -252,22 +346,12 @@ ul li img
 } 
 
 
-.anim_text
-{
-    display: block;
-    position: absolute;
-    top: 5px;
-    float: left;
-    color: white;
-}
-
-
 #nav_1
 {
  display: inline-block;
  position: absolute;
  right: 120px;
- color: #E9F1F7;
+ color: blue;
  top: 0px;
   z-index: 2;
 }
