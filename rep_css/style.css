@@ -101,6 +101,11 @@ footer
     z-index: 2;
 }
 
+.div_droite
+{
+  color: #CACFD2;
+}
+
 .news_letter
 {
     display: block;
