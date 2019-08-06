@@ -104,7 +104,28 @@ footer
 .div_droite
 {
   color: #CACFD2;
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 35%;
+  right: 5px;
 }
+
+.div_droite p, .div_droite span
+{
+   font-size: 0.8em;  
+}
+
+.email
+{
+    color: blue;
+}
+
+.div_droite ul
+{
+     list-style-type: none;
+}
+
 
 .news_letter
 {
